@@ -2,16 +2,15 @@
 
 int main(){
 	
-	int x[4][4], i, s;
+	int x[4][4], i, s=0, j;
 	
-	for(s=0;s<4;s++){
+	for(j=0;j<4;j++){
 		for(i=0;i<4;i++){
-			printf("matriz [%d][%d]:",s ,i);
-			scanf("%d",&x[s][i]);
+			printf("matriz [%d][%d]:",j ,i);
+			scanf("%d",&x[j][i]);
 		}
 	}
 	
-	s=0;
 	for(i=0;i<4;i++){
 		s+=x[i][i];
 	}
