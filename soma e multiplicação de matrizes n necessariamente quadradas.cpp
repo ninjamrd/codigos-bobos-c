@@ -14,7 +14,7 @@ int main(){
 	
 	for(i=0;i<l1;i++){
 		for(j=0;j<c1;j++){
-			printf("matriz x[%d][%d]:",i ,j );
+			printf("matriz 1[%d][%d]:",i ,j );
 			scanf("%d",&m1[i][j]);
 		}
 	}
@@ -29,7 +29,7 @@ int main(){
 	
 	for(i=0;i<l2;i++){
 		for(j=0;j<c2;j++){
-			printf("matriz x[%d][%d]:",i ,j );
+			printf("matriz 2[%d][%d]:",i ,j );
 			scanf("%d",&m2[i][j]);
 		}
 	}
@@ -68,7 +68,7 @@ int main(){
 			}
 		}
 	
-	printf("matriz multiplicaçao\n");
+	printf("matriz multiplicacao\n");
 		for(i=0;i<l1;i++){
 			printf("|");
 			for(j=0;j<c1;j++){
@@ -77,5 +77,5 @@ int main(){
 		printf("|\n");
 		}
 	}
-	else printf("nao da para fazer a multiplicaçao das matrizes\n");
+	else printf("nao da para fazer a multiplicacao das matrizes\n");
 }
