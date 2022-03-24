@@ -10,24 +10,24 @@ int main(){
 		}
 	}
 	
-	for(j=0;j<3;j++){
-		for(i=0;i<3;i++){
-			printf("matriz x[%d][%d]:",j ,i);
-			scanf("%d",&x[j][i]);
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("matriz x[%d][%d]:",i ,j);
+			scanf("%d",&x[i][j]);
 		}
 	}
 	
-	for(j=0;j<3;j++){
-		for(i=0;i<3;i++){
-			printf("matriz y[%d][%d]:",j ,i);
-			scanf("%d",&y[j][i]);
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("matriz y[%d][%d]:",i ,j);
+			scanf("%d",&y[i][j]);
 		}
 	}
 	
-	for(j=0;j<3;j++){
-		for(i=0;i<3;i++){
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
 			for(a=0;a<3;a++){
-				z[j][i]+=x[j][a]*y[a][i];
+				z[i][j]+=x[i][a]*y[a][j];
 			}	
 		}
 	}
